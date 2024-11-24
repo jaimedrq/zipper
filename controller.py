@@ -26,7 +26,6 @@ if __name__ == '__main__':
       @response.call_on_close
       def cleanup():
         """"""
-        print("wasabi!")
         print(f"Intentando eliminar el archivo: {downloaded_file}")
         if os.path.exists(downloaded_file):
           os.remove(downloaded_file)
